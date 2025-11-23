@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice — Thyme & Harmony Candles</title>
+    <meta name="description" content="Invoice for Thyme & Harmony Candle purchases." />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a301f44237.js" crossorigin="anonymous" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="site-header" role="banner">
+        <div class="header-inner container">
+            <a class="brand" href="index.html" aria-label="Thyme & Harmony home">
+                <img src="images/thyme-harmony-logo.png.png" alt="Thyme & Harmony Candles logo" class="logo">
+            </a>
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <ul id="navlist">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="invoice.html" class="active">Invoice</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- INVOICE SECTION -->
+    <main class="container invoice-page" role="main">
+        <div class="invoice-container" aria-label="Invoice details">
+            <h1>Invoice</h1>
+            <p>Thank you for shopping with <strong>Thyme & Harmony Candles</strong>!</p>
+
+            <!-- Customer details -->
+            <div class="customer-details">
+                <h2>Customer Information</h2>
+                <p><strong>Name:</strong> <span id="cust-name">-</span></p>
+                <p><strong>Email:</strong> <span id="cust-email">-</span></p>
+                <p><strong>Phone:</strong> <span id="cust-phone">-</span></p>
+                <p><strong>Address:</strong> <span id="cust-address">-</span></p>
+            </div>
+
+            <!-- Order items -->
+            <div class="order-items">
+                <h2>Order Items</h2>
+                <table class="invoice-table" aria-label="Order items">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody id="invoice-items">
+                        <!-- Items added via script.js -->
+                    </tbody>
+                </table>
+                <hr>
+                <p class="total">Total: JMD <span id="invoice-total">0.00</span></p>
+            </div>
+
+            <div style="text-align:center; margin-top: 20px;">
+                <button class="btn" onclick="window.print()">Print Invoice</button>
+                <a href="index.html" class="btn">Back to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="section-p1" role="contentinfo">
+        <div class="col">
+            <img class="logo" src="images/thyme-harmony-logo.png.png" alt="Thyme & Harmony logo">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Thyme & Harmony Candle Co., Shop 12, Eden Grove Plaza, Kingston, Jamaica</p>
+            <p><strong>Phone:</strong> +1 (876) 555-8891</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Thyme & Harmony Candles. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

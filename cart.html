@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart — Thyme & Harmony Candles</title>
+    <meta name="description" content="View your shopping cart and proceed to checkout at Thyme & Harmony Candles." />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a301f44237.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="site-header" role="banner">
+        <div class="header-inner container">
+            <a class="brand" href="index.html" aria-label="Thyme & Harmony home">
+                <img src="images/thyme-harmony-logo.png.png" alt="Thyme & Harmony Candles logo" class="logo" />
+            </a>
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <ul id="navlist">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cart.html" class="active">Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="invoice.html" >Invoice</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container" role="main">
+        <section class="cart-section" aria-labelledby="cart-heading">
+            <h1 id="cart-heading">Your Shopping Cart</h1>
+            <p>Review your items before proceeding to checkout.</p>
+
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Sample Product -->
+                    <tr>
+                        <td class="product-info">
+                            <img src="images/Products/Black Honey Vanilla.avif" alt="Black Honey Vanilla 24oz Candle">
+                            <span>Black Honey Vanilla 24oz</span>
+                        </td>
+                        <td class="price">JMD 2,500.00</td>
+                        <td>
+                            <input type="number" min="1" value="1" class="quantity-input">
+                        </td>
+                        <td class="subtotal">JMD 2,500.00</td>
+                        <td>
+                            <button class="remove-btn" aria-label="Remove Black Honey Vanilla 24oz from cart">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="product-info">
+                            <img src="images/Products/Cedarwood Musk 8oz.avif" alt="Cedarwood Musk 8oz Candle">
+                            <span>Cedarwood Musk 8oz</span>
+                        </td>
+                        <td class="price">JMD 800.00</td>
+                        <td>
+                            <input type="number" min="1" value="2" class="quantity-input">
+                        </td>
+                        <td class="subtotal">JMD 1,600.00</td>
+                        <td>
+                            <button class="remove-btn" aria-label="Remove Cedarwood Musk 8oz from cart">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="cart-summary">
+                <h2>Cart Summary</h2>
+                <p><strong>Total:</strong></p>
+                <a href="checkout.html" class="btn">Proceed to Checkout</a>
+                <a href="shop.html" class="btn btn-secondary">Continue Shopping</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="section-p1" role="contentinfo">
+        <div class="col">
+            <img class="logo" src="images/thyme-harmony-logo.png.png" alt="Thyme & Harmony logo">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Thyme & Harmony Candle Co., Shop 12, Eden Grove Plaza, Kingston, Jamaica</p>
+            <p><strong>Phone:</strong> +1 (876) 555-8891</p>
+            <p><strong>Hours:</strong> 10:00–18:00, Mon–Sat</p>
+
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col install">
+            <h4>Payment Options</h4>
+            <p>Safe & Secure Payment Gateways</p>
+            <div class="row payment-logos">
+                <img src="images/payment/Graphic Designer Replaces Wordmarks In 30 Famous Logos With The Fonts They Use.jpg" alt="PayPal">
+                <img src="images/payment/download (4).jpg" alt="Visa">
+                <img src="images/payment/Logo Mastercard.jpg" alt="MasterCard">
+                <img src="images/payment/12 Brand Archetypes -THE RULER- American Express.jpg" alt="American Express">
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 Thyme & Harmony Candles. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
